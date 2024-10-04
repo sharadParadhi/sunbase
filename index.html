@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Designer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar for Components -->
+    <div class="sidebar">
+      <h3>Components</h3>
+      <button id="add-input">Input +</button>
+      <button id="add-select">Select +</button>
+      <button id="add-textarea">Textarea +</button>
+    </div>
+
+    <!-- Form Area -->
+    <div class="form-section">
+      <div class="form-header">
+        <h3>Form Designer</h3>
+        <button id="save-form">Save</button>
+      </div>
+
+      <form id="dynamic-form" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <!-- Form elements will be added here dynamically -->
+      </form>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
